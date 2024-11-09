@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    
+    <link rel="stylesheet" href="manage-books.css">
+    <link rel="stylesheet" href="commen.css">
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img src="images/Logo.png" alt="Logo" class="sidebar-logo">
+        </div>
+        <h2>Hajar Al-maghlouth</h2>
+        <p class="role">Logistics Manager</p>
+        <ul class="nav-menu">
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="manage-books.html"><i class="fas fa-book"></i> Manage Books</a></li>
+            <li><a href="faculty-orders.html"><i class="fas fa-file-alt"></i> Faculty Orders</a></li>
+            <li><a href="reported-problems.html"><i class="fas fa-exclamation-triangle"></i> Reported Problems</a></li>
+        </ul>
+    </div>
+
+
+    </div> 
+    <div class="main-content">
+        <header>
+            <div class="nav-buttons">
+                <button class="nav-btn"><i class="fas fa-arrow-left"></i></button>
+                <button class="nav-btn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </header>
+
+        <div class="search-books">
+            <h2>Search Books</h2>
+            <form action="search-results.html" method="get">
+                <input type="text" name="search" placeholder="Name, Course" class="search-input">
+                <button type="submit" class="search-btn"><i class="fas fa-search"></i> Search</button>
+                <button type="button" class="advanced-search-btn">Advanced Search</button>
+            </form>
+        </div>
+        <h1>Library</h1>
+        <h2>Most Viewed Books</h2>
+        <div class="library-sections">
+           
+               
+                <div class="book-card">
+                    <img src="images/swe206.png" alt="SWE 206: Software Engineering">
+                    <p>SWE 206: Software Engineering</p>
+                    <div class="button-group">
+                        <a href="edit-book.html" class="edit-btn">Edit</a>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="images/swe316.png" alt="SWE 316: Software Design">
+                    <p>SWE 316: Software Design</p>
+                    <div class="button-group">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                    
+              
+            </div>
+            <div class="book-card">
+                <img src="images/swe387.png" alt="SWE 387: Software Management">
+                <p>SWE 387: Software Management</p>
+                <div class="button-group">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+                <!-- Repeat book cards for more books -->
+            </div>
+            <h2>All Books</h2>
+            <div class="library-sections">
+            <!-- <div class="all-books"> -->
+                
+                <div class="book-card">
+                    <img src="images\math201.png" alt="MATH 201: Calculus 3">
+                    <p>MATH 201: Calculus 3</p>
+                    <div class="button-group">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="images\ics343.png" alt="ics343">
+                    <p>ICS343: Computer Network</p>
+                    <div class="button-group">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <div class="book-card">
+                    <img src="images\ics321.png" alt="ics321">
+                    <p>ICS321: Database Systems</p>
+                    <div class="button-group">
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </div>
+                </div>
+                <!-- Repeat book cards for more books -->
+            </div>
+       
+        <div class="add-book-section">
+            <a href="add-books.html" class="add-book-btn"><i class="fas fa-plus"></i> Add new book</a>
+        </div>
+    </div>
+</body>
+</html>

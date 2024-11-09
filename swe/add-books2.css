@@ -1,0 +1,129 @@
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    justify-content: space-between; 
+    margin-left: 450px;
+    
+}
+
+.upload-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload-box {
+    border: 2px dashed #004d33;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.upload-box button {
+    background-color: #004d33;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.book-details-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.save-btn {
+    display: inline-block;
+    background-color: #004d26;
+    color: white;
+    border: none;
+    padding: 8px 16px; 
+    text-align: bottom;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 20px;
+}
+
+.save-button-container {
+    text-align: right; 
+    margin-top: 100px; 
+}
+
+/* Media queries for responsive design */
+
+/* For tablets and small screens */
+@media (max-width: 900px) {
+    .main-content {
+        margin-left: 200px; 
+        padding: 15px;
+    }
+    .book-details-form {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    .save-button-container {
+        margin-top: 50px; 
+        text-align: center;
+    }
+}
+
+/* For smartphones and smaller devices */
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 100px;
+        padding: 10px;
+    }
+    .upload-section {
+        padding: 15px;
+        margin-top: 15px;
+    }
+    .form-group input {
+        padding: 8px;
+    }
+    .save-btn {
+        padding: 6px 12px; 
+        height: auto;
+    }
+    .save-button-container {
+        margin-top: 30px; 
+        text-align: center;
+    }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1200px) {
+    .main-content {
+        margin-left: 350px; 
+        padding: 25px;
+    }
+    .upload-section {
+        padding: 25px;
+    }
+    .form-group input {
+        padding: 12px;
+    }
+    .save-btn {
+        padding: 10px 20px;
+    }
+}

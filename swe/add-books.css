@@ -1,0 +1,115 @@
+
+.main-content {
+    
+    flex-grow: 1;
+    padding: 30px;
+    justify-content: space-between; 
+    margin-left:400px ;
+}
+
+.upload-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 30px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload-box {
+    border: 2px dashed #004d33;
+    padding: 20px;
+}
+
+.upload-box button {
+    background-color: #004d33;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.next-btn {
+    background-color: #004d33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.next-button-container {
+    text-align: center;
+    margin-top: 100px; 
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and small screens */
+@media (max-width: 900px) {
+    .main-content {
+        margin-left: 200px;
+        padding: 20px;
+    }
+    
+    .upload-section {
+        padding: 20px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .next-btn {
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
+}
+
+/* For smartphones and smaller devices */
+@media (max-width: 600px) {
+    .main-content {
+        margin-left: 100px;
+        padding: 15px;
+    }
+
+    .upload-section {
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .upload-box {
+        padding: 15px;
+    }
+
+    .upload-box button {
+        padding: 8px;
+    }
+
+    .next-btn {
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+
+    .next-button-container {
+        margin-top: 50px;
+    }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1200px) {
+    .main-content {
+        margin-left: 350px;
+        padding: 40px;
+    }
+
+    .upload-section {
+        padding: 40px;
+        margin-bottom: 50px;
+    }
+
+    .next-btn {
+        padding: 12px 25px;
+        margin-top: 25px;
+    }
+}

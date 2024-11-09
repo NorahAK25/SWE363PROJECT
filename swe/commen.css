@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    height: 100vh;
+}
+
+.sidebar {
+   
+    background-color: #004d26;
+    color: white;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.sidebar h2 {
+    margin: 0;
+}
+
+.sidebar .role {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-menu li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-menu a i {
+    margin-right: 10px;
+}
+
+.nav-menu a:hover,
+.nav-menu .active {
+    background-color: #016936;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: #004d1a;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media queries for responsive design */
+
+/* For tablets and smaller screens */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 200px;
+        padding-left: 20px;
+    }
+    .nav-menu a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+    .nav-btn {
+        padding: 8px;
+    }
+}
+
+/* For smartphones and small devices */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 150px;
+        padding-left: 15px;
+    }
+    .nav-menu li {
+        margin: 10px 0;
+    }
+    .nav-menu a {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+    .nav-btn {
+        padding: 6px;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
+    .sidebar {
+        width: 350px;
+    }
+    .nav-menu a {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+    .nav-btn {
+        padding: 12px;
+    }
+}
