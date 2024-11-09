@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Page</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .logo {
+            height: 60px;
+            width: auto; /* Adjust to keep aspect ratio */
+        }
+        .menu-icon {
+            height: 30px;
+        }
+        main {
+            text-align: center;
+        }
+        h1 {
+            color: #377e4c;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .button {
+            background-color: #377e4c;
+            color: #e6fffa;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .button:hover {
+            background-color: #2f6b3f;
+        }
+        footer {
+            width: 100%;
+            background-image: url('background.svg');
+            background-size: cover;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-KFUPM.png" alt="KFUPM Logo" class="logo">
+        <img src="Logobook.PNG" alt="Menu Icon" class="menu-icon">
+    </header>
+    <main>
+        <h1>Who's Visiting?</h1>
+        <button class="button" onclick="selectUser('student')">KFUPM Student</button>
+        <button class="button" onclick="selectUser('staff')">Library Staff</button>
+        <button class="button" onclick="selectUser('faculty')">Academic Faculty</button>
+    
+        <script>
+            function selectUser(userType) {
+                localStorage.setItem('userType', userType);
+                window.location.href = 'loginpage.html'; // Redirect to login page
+            }
+        </script>
+       
+    </main>
+    <footer> </footer>
+    <script>
+        // Adding click event listeners to buttons
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => {
+            button.addEventListener('click', function(event) {
+                const confirmation = confirm('Are you sure you want to navigate to ' + this.textContent + '?');
+                if (!confirmation) {
+                    event.preventDefault(); // Prevent navigation if user cancels
+                }
+            });
+        });
+    </script>
+</body>
+</html>
