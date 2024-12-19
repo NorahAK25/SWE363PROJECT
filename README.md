@@ -1,7 +1,7 @@
 
 ## Book Center
 
-Book Center is a comprehensive and user-friendly web application designed to facilitate book management and access for students, faculty, and staff. The system provides tailored functionalities for each user role, ensuring an efficient and engaging experience.
+Book Center is a comprehensive and user-friendly web designed to facilitate book management and access for students, faculty, and staff. The system provides tailored functionalities for each user role, ensuring an efficient and engaging experience.
 
 ## Features
 
