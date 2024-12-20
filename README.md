@@ -63,3 +63,66 @@ Ensure you have the following installed:
    npm start
    ```
    The server will be available at `http://localhost:3000`.
+
+
+   API:
+   Authentication Routes
+Handles authentication-related routes.
+
+POST /login
+Description: Handles user login.
+POST /register
+Description: Handles user registration.
+Book Routes
+Handles book-related routes.
+
+GET /books/
+Description: Retrieves all books.
+POST /books/
+Description: Creates a new book.
+GET /books/:id
+Description: Retrieves a specific book by its ID.
+PUT /books/:id
+Description: Updates a specific book by its ID.
+DELETE /books/:id
+Description: Deletes a specific book by its ID.
+POST /books/approve
+Description: Approves a book.
+DELETE /books/reject/:id
+Description: Rejects a book by its ID.
+Faculty Routes
+Handles faculty-related routes.
+
+GET /faculty/
+Description: Retrieves all faculty orders.
+POST /faculty/
+Description: Creates a new faculty order.
+Favorite Routes
+Handles favorite-related routes.
+
+GET /favorites/
+Description: Retrieves all favorite books for all users.
+GET /favorites/user/:userId
+Description: Retrieves favorite books for a specific user.
+
+
+Role Routes
+Handles role-related routes.
+
+GET /roles/
+Description: Retrieves all roles.
+GET /roles/:name
+Description: Retrieves a specific role by its name.
+Student Routes
+Handles student-related routes.
+
+GET /students/
+Description: Retrieves all student orders.
+GET /students/pending-approval
+Description: Retrieves student orders pending approval.
+User Routes
+Handles user-related routes.
+
+POST /users/register
+Description: Registers a new user.
+Additional routes might handle user authentication and profile management.
